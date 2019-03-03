@@ -1,0 +1,85 @@
+/* NEED TO CHANGE THE FONT COLOR TO WHITE */
+
+.ui.secondary.pointing.menu{
+  background: #0099ff;
+  font-size: 1.25em;
+  margin-bottom: 0;
+}
+
+.overlay{
+  border-radius: 50%;
+  height: 15.0em;
+  width: 15.0em;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+  border: 3px solid white;
+}
+
+.customFont1{
+  font-family: 'Work Sans', sans-serif;
+}
+
+.center{
+  padding-top: 15px;
+  text-align: center;
+}
+
+#makeBig{
+  font-size: 50px;
+}
+#addPadding{
+  padding-left: 40px;
+  padding-right: 40px;
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+
+.maxHeight{
+  max-height: 500px;
+}
+
+.add-padding {
+  padding-top: 20px;
+}
+
+#textOverlay{
+  position: absolute;
+  top: 54%;
+  left: 50%;
+  color: white;
+  transform: translate(-50%, -54%);
+}
+#secTxtOverlay{
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -60%);
+  color: white;
+}
+
+#iconOverlay{
+  position: absolute;
+  top: 62%;
+  left: 50%;
+  transform: translate(-50%, 65%);
+  background-color: transparent;
+  color: white;
+}
+
+/* OVERLAY ISSUES */
+.buttonOverlay{
+    position: absolute;
+    top: 185%;
+    left: 50%;
+    color: white;
+    transform: translate(-50%, -50%);
+}
+
+#fitOver{
+  position: absolute;
+  top: 250%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
