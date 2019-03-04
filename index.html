@@ -11,13 +11,13 @@
   <body>
     <!-- MAIN NAVIGATION MENU -->
     <div class="ui secondary pointing menu">
-      <a class="item customFont1">
+      <a class="item customFont1 homeNav">
         Home
       </a>
-      <a class="item customFont1">
+      <a class="item customFont1 aboutNav">
         About Me
       </a>
-      <a class="item customFont1">
+      <a class="item customFont1 expNav">
         Experience
       </a>
     </div>
@@ -47,16 +47,16 @@
       <!-- GET THE SLIDERS TO DIFFERENT PAGES HERE, MAKE SURE BUTTONS ARE ACTIVE -->
       <div class="row add-padding">
         <img class="ui fluid image maxHeight" src="assets/aboutMe2.jpg" />
-        <button class="ui inverted huge button buttonOverlay">About Me</button>
+        <button class="ui inverted huge button buttonOverlay aboutNav">About Me</button>
       </div>
       <div class="row add-padding">
         <img class="ui fluid image maxHeight" src="assets/experience2.jpg" />
-        <button class="ui inverted huge button" id="fitOver">Experience</button>
+        <button class="ui inverted huge button expNav" id="fitOver">Experience</button>
       </div>
     </div>
 
     <!-- ABOUT ME PAGE GOES HERE -->
-    <div class="aboutMe">
+    <div class="aboutMe" style="display:none">
       <h1>ABOUT ME</h1>
       <div class="ui middle aligned grid">
         <div class="eight wide column">
@@ -81,13 +81,26 @@
             TRAVEL PHOTOS
           </p>
         </div>
-        <div class="four wide column">
-          <img class="ui fluid image" src="assets/joshua_tree.jpg" />
+        <div class="four wide column normalizePic">
+          <img class="ui medium image" src="assets/joshua_tree.jpg"/>
         </div>
         <div class="four wide column">
-          <img class="ui fluid image" src="assets/climb.jpg" />
+          <img class="ui medium image" src="assets/northern_lights.jpg" />
+        </div>
+        <div class="four wide column">
+          <img class="ui medium image" src="assets/cliffs_head.jpg"></img>
+        </div>
+        <div class="four wide column">
+          <img class="ui medium image" src="assets/peacock.jpg"></img>
         </div>
       </div>
+    </div>
+
+    <!-- EXPERIENCE PAGE GOES HERE -->
+    <div class="experience" style="display:none">
+      <p>
+        THIS IS A TEST
+      </p>
     </div>
 
 
@@ -108,7 +121,6 @@
         </div>
       </div>
     </div>
-
-
+    <script type="text/javascript" src="js/nav.js"></script>
   </body>
 </html>

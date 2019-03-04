@@ -71,15 +71,20 @@
 /* OVERLAY ISSUES */
 .buttonOverlay{
     position: absolute;
-    top: 185%;
+    top: 165%;
     left: 50%;
     color: white;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -165%);
 }
 
 #fitOver{
   position: absolute;
-  top: 250%;
+  top: 225%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -225%);
 }
+
+/* .normalizePic{
+  width: 300px;
+  height: 200px;
+} */
