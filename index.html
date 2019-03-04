@@ -3,11 +3,13 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" type= "text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="css/master.css" />
     <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
     <title></title>
   </head>
   <body>
+    <!-- MAIN NAVIGATION MENU -->
     <div class="ui secondary pointing menu">
       <a class="item customFont1">
         Home
@@ -19,37 +21,64 @@
         Experience
       </a>
     </div>
-    <!-- MAIN OVERVIEW -->
-    <div class="row">
-      <img class="ui fluid image" src="assets/cali.jpg" />
-      <img class="overlay" src="assets/headshot.jpg" />
-      <h1 class="ui center align customFont1" id="textOverlay">Daniel M. Brett</h1>
-      <h3 class= "ui center align customFont1" id= "secTxtOverlay">Learn about me, view my credentials, and check out my projects!</h3>
-      <button class="massive ui icon button" id=iconOverlay>
-        <i class="chevron circle down icon"></i>
-      </button>
+    <!-- HOME PAGE -->
+    <div class="homepage">
+      <div class="row">
+        <img class="ui fluid image" src="assets/cali.jpg" />
+        <img class="overlay" src="assets/headshot.jpg" />
+        <h1 class="ui center align customFont1" id="textOverlay">Daniel M. Brett</h1>
+        <h3 class= "ui center align customFont1" id= "secTxtOverlay">Learn about me, view my credentials, and check out my projects!</h3>
+        <button class="massive ui icon button" id=iconOverlay>
+          <i class="chevron circle down icon"></i>
+        </button>
+      </div>
+      <!-- INTRODUCTION GOES HERE -->
+      <div class="row">
+        <h1 class="customFont1 center" id="makeBig">
+          Welcome!
+        </h1>
+        <p class="customFont1 center" id="addPadding">
+          Thank you for checking out my personal site! It's intended to give you
+          an idea of who I am, my experience, and some of the projects that I've
+          worked on. Code for this site can be found at the link at the bottom
+          of the page.
+        </p>
+      </div>
+      <!-- GET THE SLIDERS TO DIFFERENT PAGES HERE, MAKE SURE BUTTONS ARE ACTIVE -->
+      <div class="row add-padding">
+        <img class="ui fluid image maxHeight" src="assets/aboutMe2.jpg" />
+        <button class="ui inverted huge button buttonOverlay">About Me</button>
+      </div>
+      <div class="row add-padding">
+        <img class="ui fluid image maxHeight" src="assets/experience2.jpg" />
+        <button class="ui inverted huge button" id="fitOver">Experience</button>
+      </div>
     </div>
-    <!-- INTRODUCTION GOES HERE -->
-    <div class="row">
-      <h1 class="customFont1 center" id="makeBig">
-        Welcome!
-      </h1>
-      <p class="customFont1 center" id="addPadding">
-        Thank you for checking out my personal site! It's intended to give you
-        an idea of who I am, my experience, and some of the projects that I've
-        worked on. Code for this site can be found at the link at the bottom
-        of the page.
-      </p>
+
+    <!-- ABOUT ME PAGE GOES HERE -->
+    <div class="aboutMe">
+      <div class="ui grid">
+        <div class="eight wide column">
+          <img class="ui fluid image" src="assets/death_valley.jpg" />
+        </div>
+        <div class="eight wide column">
+          <div class="ui basic segment">
+            <p>
+              Hi, I'm Dan Brett and I'm a Solutions Engineer with the cybersecurity team at Oracle Corporation.
+              As an Engineer, I work with my team to develop, package, and demo security products for Oracle customers.
+              Everyday I'm pushed to learn new technologies and languages; needless to say this job has been an excellent
+              learning so far. Outside of work, I'm an avid chess player and I enjoy camping, traveling & hiking. I'm also
+              a nationally certified EMT and have worked for various ambulance services for 5 years. I have passions for both
+              tech and medicine and at some point I hope to combine both of them through some form of entrepreneurship. I'm
+              constantly innovating and self-teaching to actualize my ideas (I'm a huge fan of Udemy online courses). I hope
+              this website gives you a better idea of who I am and please feel free to peruse some of my favorite photos below.
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
-    <!-- GET THE SLIDERS TO DIFFERENT PAGES HERE, MAKE SURE BUTTONS ARE ACTIVE -->
-    <div class="row add-padding">
-      <img class="ui fluid image maxHeight" src="assets/aboutMe2.jpg" />
-      <button class="ui inverted huge button buttonOverlay">About Me</button>
-    </div>
-    <div class="row add-padding">
-      <img class="ui fluid image maxHeight" src="assets/experience2.jpg" />
-      <button class="ui inverted huge button" id="fitOver">Experience</button>
-    </div>
+
+
 
     <!-- ADD FOOTER LINKS HERE. LINK TO GITHUB CODE AND OTHERS -->
     <div class="ui one column stackable center aligned page grid" style="padding-top: 20px">
