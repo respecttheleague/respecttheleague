@@ -1,6 +1,5 @@
 //Redundant NavBar code to switch between various pages. Using JQuery Slideown Effect
 $(".homeMenu").click(function(){
-  console.log("The correct button has been clicked!");
   $(".aboutMe").hide();
   $(".experience").hide();
   $(".resume").hide();
@@ -8,7 +7,6 @@ $(".homeMenu").click(function(){
 });
 
 $(".aboutMenu").click(function(){
-  console.log("The correct button has been clicked!");
   $(".home").hide();
   $(".experience").hide();
   $(".resume").hide();
@@ -16,7 +14,6 @@ $(".aboutMenu").click(function(){
 });
 
 $(".expMenu").click(function(){
-  console.log("The correct button has been clicked!");
   $(".home").hide();
   $(".aboutMe").hide();
   $(".resume").hide();
@@ -24,7 +21,6 @@ $(".expMenu").click(function(){
 });
 
 $(".resMenu").click(function(){
-  console.log("The correct button has been clicked!");
   $(".home").hide();
   $(".aboutMe").hide();
   $(".experience").hide();
