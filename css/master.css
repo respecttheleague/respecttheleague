@@ -1,11 +1,33 @@
-/* NEED TO CHANGE THE FONT COLOR TO WHITE */
+body{
+  /* font-family: 'Work Sans', sans-serif; */
 
-.ui.secondary.pointing.menu{
-  background: #0099ff;
-  font-size: 1.25em;
-  margin-bottom: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.5em;
+  overflow: auto;
+  height: 100%;
+  color: rgba(255, 255, 255, 1);
+  background: transparent;
+  -webkit-font-smoothing: antialiased;
+  -webkit-overflow-scrolling: touch;
 }
 
+
+#mainNavbar .nav-link{
+  color: white;
+  font-size: 1.25em;
+}
+
+/* .bg-light{
+  background: #4286f4;
+  color: #4286f4;
+} */
+
+
+.overlayContainer{
+  position: relative;
+}
 .overlay{
   border-radius: 50%;
   height: 15.0em;
@@ -17,78 +39,309 @@
   border: 3px solid white;
 }
 
-.customFont1{
-  font-family: 'Work Sans', sans-serif;
+/* FIX HOVER OVER TEXT ISSUE */
+.textOverlay {
+  opacity: 0;
 }
 
-.center{
-  padding-top: 15px;
+.homepage .makeVisible{
+  color: black;
+}
+
+.hideClass{
+  display: none;
+}
+.hovContainer:hover .textOverlay{
+  opacity: 1;
+  transition: .5s ease;
+}
+
+.hovContainer:hover .hoverGray{
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+
+.showText{
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   text-align: center;
 }
 
-#makeBig{
-  font-size: 50px;
+.showText:hover{
+  -webkit-filter: inherit;
+  filter: inherit;
 }
-#addPadding{
-  padding-left: 40px;
-  padding-right: 40px;
+
+
+
+.textColoring {
+  color: white;
   font-size: 20px;
-  padding-bottom: 20px;
-}
-
-.maxHeight{
-  max-height: 500px;
-}
-
-.add-padding {
-  padding-top: 20px;
-}
-
-#textOverlay{
   position: absolute;
-  top: 54%;
+  top: 50%;
   left: 50%;
+  /* -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%); */
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+#overlayName{
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -30%);
   color: white;
-  transform: translate(-50%, -54%);
+  padding-top: 250px;
 }
-#secTxtOverlay{
+
+#overlayDesc{
   position: absolute;
-  top: 60%;
+  top: 30%;
   left: 50%;
-  transform: translate(-50%, -60%);
+  transform: translate(-50%, -30%);
+  color: white;
+  padding-top: 315px;
+  text-align: center;
+  font-size: 1.0em;
+}
+
+a{
+  outline: none;
+}
+
+.italicize
+{
+    font-style: italic;
+}
+
+
+
+/* GET RID OF ANNOYING OUTLINE WHEN YOU CLICK ON BUTTON--ACTION ITEM */
+.btnOverlay{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  border-radius: 0;
+}
+
+.btnOverlay:hover{
+  color: red;
+}
+
+.centering{
+  text-align: center;
+  padding: 1% 15%;
+}
+
+.btn-primary{
+  color: red;
+}
+
+#welcomeHeader{
+  font-weight: 2.0;
+  padding-top:15px;
+  font-size:50px
+}
+#welcomeMessage{
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 18px;
+}
+
+/* ************************************ */
+/************ABOUT ME PAGE **************/
+/* ************************************ */
+
+#aboutDesc{
+  color:black;
+  font-size:20px;
+}
+
+.overlayHeader{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   color: white;
 }
 
-#iconOverlay{
-  position: absolute;
-  top: 62%;
-  left: 50%;
-  transform: translate(-50%, 65%);
-  background-color: transparent;
-  color: white;
+.headshot{
+  border-radius:50%;
+  border: solid white 3px;
 }
 
-/* OVERLAY ISSUES */
-.buttonOverlay{
-    position: absolute;
-    top: 165%;
-    left: 50%;
-    color: white;
-    transform: translate(-50%, -165%);
+.panel-aboutMe{
+    margin-top: 110px;
+
+    text-align: center;
+
+    border: 7px solid #fff;
+    background: #3385ff;
+    /* background: rgb(113, 107, 107); */
+    box-shadow: 0 1px 15px rgba(0, 0, 0, .4);
 }
 
-#fitOver{
-  position: absolute;
-  top: 225%;
-  left: 50%;
-  transform: translate(-50%, -225%);
+.panel-aboutMe img{
+    margin-top: -115px;
+
+    border: 7px solid #fff;
+    box-shadow: 0 1px 15px rgba(0, 0, 0, .2);
 }
 
-/* .aboutMe{
-  background: #0099ff;
-} */
+.panel-aboutMe p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
 
-/* .normalizePic{
-  width: 300px;
-  height: 200px;
-} */
+
+
+
+
+/* ************************************ */
+/************ EXPERIENCE PAGE ***********/
+/* ************************************ */
+.panel,
+.panel-heading,
+.panel-body,
+.panel-aboutMe
+{
+    border: none;
+    border-radius: 0;
+}
+
+.panel-title{
+  font-size: 20px;
+  margin-bottom: 0;
+}
+
+.panel h5{
+    font-weight: bold;
+    margin-top: 0;
+    font-size: 14px;
+}
+
+.page.experience .panel-heading{
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.page.experience .panel-body{
+    color: black;
+    background-color: #e1e8f0;
+}
+
+.panel-education .panel-body .row div,
+.panel-work .panel-body .row div
+{
+    padding: 3px;
+}
+
+.panel-education .panel-body .row div.col-10,
+.panel-work .panel-body .row div.col-10
+{
+    padding-left: 20px;
+}
+
+.page.experience .panel img
+{
+    margin: auto;
+}
+.panel-education .col-2, .panel-work .col-2{
+  padding-left: 20px;
+}
+.panel-education .panel-body .row p,
+.panel-work .panel-body .row p{
+    font-size: 12px;
+    line-height: 15px;
+    margin-top: -10px;
+}
+.panel-education .panel-heading{
+    background-color: #6ed3cf;
+}
+
+.panel-skills .panel-heading
+{
+    background-color: #9068be;
+}
+
+.panel-work .panel-heading{
+    background-color: #e62739;
+}
+
+.page.experience .panel i{
+    font-size: 60px;
+}
+
+.expand-title{
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  font-weight: 200;
+  font-size: 16px;
+}
+
+/* ************************************ */
+/************ RESUME PAGE ***************/
+/* ************************************ */
+
+.page.resume
+{
+    text-align: center;
+}
+
+
+.page.resume h5
+{
+    font-family: monospace;
+    color: rgb(182, 180, 181);
+    font-size: 16px;
+}
+
+iframe.resume-viewer
+{
+    width: 300px;
+    height: 400px;
+    margin: 0 auto;
+
+    border: none;
+    box-shadow: 0 0 25px rgba(0, 0, 0, .1);
+}
+
+@media (min-width: 768px)
+{
+    iframe.resume-viewer
+    {
+        width: 750px;
+        height: 750px;
+    }
+}
+
+/* LINKS AT BOTTOM OF PAGE */
+.fa-code{
+  color:black;
+}
+.fa-github{
+  color: black;
+}
+.fa-linkedin{
+  color:black;
+}
+
+/* Disable annoying outline */
+.btn:focus,.btn:active {
+   outline: none !important;
+   box-shadow: none;
+}
+
+.strapline{
+  /* color: blue; */
+  background: #387ded;
+}
